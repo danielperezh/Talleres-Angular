@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+.papeleraRoja {
+  color: #dd2323;
+ }
+ .papeleraGris {
+  color: #a09898;
+ }
+ .manito tr {
+  cursor: pointer;
+ }
+/* Estilo para el fondo de la página */
+body {
+  background-color: #393e44;
+}

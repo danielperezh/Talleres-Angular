@@ -1,0 +1,95 @@
+/* Estilo para la sección de los carros */
+.manito, .segundo {
+  border-radius: 10px;
+  background-color: #1F2226;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.row {
+  margin-right: auto;
+}
+
+.album {
+  margin-top: 5px;
+}
+
+/* Estilo para los botones */
+.btn-crear {
+  background-color: #007763;
+  border-color: #007763;
+  margin-bottom: 20px;
+}
+
+.btn-mas {
+  background-color: #007763;
+  border-color: #007763;
+}
+
+.btn-success {
+  background-color: #0354a0;
+  border-color: #0354a0;
+}
+
+.btn-can {
+  background-color: #cf1c0f;
+  border-color: #cf1c0f;
+  margin-bottom: 20px;
+}
+
+
+.btn-crear:hover, .btn-mas:hover {
+  background-color: #00776394;
+  border-color: #1a1a1a;
+}
+
+.btn-success:hover {
+  background-color: #033b70;
+  border-color: #1a1a1a;
+}
+
+.btn-can:hover {
+  background-color: #a3160c;
+  border-color: #1a1a1a;
+}
+
+/* Estilo para las tarjetas de los carros */
+.card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 5px;
+  background-color: #D0D5D9;
+}
+
+.list-group-item{
+  background-color: #D0D5D9;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.img {
+  margin-top: 7px;
+  border-radius: 3px;
+  border: 1px solid;
+}
+
+
+
+.papeleraGris {
+  color: grey;
+}
+
+/* Estilo para la imagen del carro */
+.img-thumbnail {
+  border: none;
+}
+
+.text {
+  color: #F2F2F2;
+}
+
+
+

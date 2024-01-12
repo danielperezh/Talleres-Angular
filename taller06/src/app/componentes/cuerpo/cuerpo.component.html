@@ -1,0 +1,82 @@
+<div class="container-fluid">
+  <div class="row mt-3">
+    <div class="col-8">
+      <ul class="list-group list-group-hover list-group-striped manito">
+        <li class="list-group-item text-success" (click)="cancelar()">
+          {{ titulo }}
+        </li>
+        <li
+          class="list-group-item list-group-item-action py-1"
+          *ngFor="let miCarro of arregloCarros"
+          (click)="seleccionarCarro(miCarro)"
+          [class.active]="miCarro == carroSeleccionado"
+        >
+          <i class="fas fa-check greenIcon"></i> {{ miCarro.marca }},
+          <span class="textoSmall">
+            {{ miCarro.placa }}, {{ miCarro.modelo }}
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-4 bg-light">
+      <form class="mt-2">
+        <div class="mb-3">
+          <label for="placa" class="form-label text-success">Placa</label>
+          <input
+            type="text"
+            class="form-control"
+            id="placa"
+            name="placa"
+            [(ngModel)]="carroSeleccionado.placa"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="placa" class="form-label text-success">Marca</label>
+          <input
+            type="text"
+            class="form-control"
+            id="marca"
+            name="marca"
+            [(ngModel)]="carroSeleccionado.marca"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="placa" class="form-label text-success">Modelo</label>
+          <input
+            type="text"
+            class="form-control"
+            id="modelo"
+            name="modelo"
+            [(ngModel)]="carroSeleccionado.modelo"
+          />
+        </div>
+        <div class="d-grid gap-2">
+          <button
+            class="btn btn-success btn-sm"
+            type="button"
+            *ngIf="carroSeleccionado.codigo == 0"
+            (click)="crearCarro()"
+          >
+            Crear
+          </button>
+          <button
+            class="btn btn-primary btn-sm"
+            type="button"
+            *ngIf="carroSeleccionado.codigo != 0"
+            (click)="actualizarCarro()"
+          >
+            Actualizar
+          </button>
+          <button
+            class="btn btn-danger btn-sm"
+            type="button"
+            *ngIf="carroSeleccionado.codigo != 0"
+            (click)="borrarCarro()"
+          >
+            Eliminar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
